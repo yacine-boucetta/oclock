@@ -34,7 +34,19 @@ input{
     transform: translate(-50%, -50%);
     color:#2EE59D;
     font-size: 45px;
-
+}
+.timerDisplay{
+    background-color: #2c2c2c;
+    z-index: 10000;
+}
+#chronos button{
+    z-index: 1000;
+}
+#chronos p{
+position: absolute;
+top:-300%;
+font-size: 15px;
+z-index: -1;
 }
 .timerDisplay{
     text-align: center;
