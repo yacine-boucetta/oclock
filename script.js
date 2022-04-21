@@ -148,8 +148,9 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     document.getElementById('setCountdown').addEventListener('click', () => {
-    [milliseconds, seconds, minutes, hours]=[0,secondCountDown.value,minuteCountDown.value,0]
-            
+        
+    [milliseconds, seconds, minutes, hours]=[0,secondCountDown.value,minuteCountDown.value , 0]
+    timeCountDown.innerHTML=`${minuteCountDown.value}:${secondCountDown.value}:${'000'}`
         })
     function displayCountDown() {
         let m = minutes < 10 ? "0" + minutes : minutes;
